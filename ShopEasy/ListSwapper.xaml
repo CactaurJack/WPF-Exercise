@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="ShopEasy.ListSwapper"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ShopEasy"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="200">
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*"/>
+			<RowDefinition Height="60"/>
+		</Grid.RowDefinitions>
+		<Button Click="PriorList" Grid.Row="1" Name="priorButton">
+			&lt;Prior
+		</Button>
+		<Button Click="AddNewList" Grid.Row="1" Grid.Column="1">
+			Add List
+		</Button>
+		<Button Click="NextList" Grid.Row="1" Grid.Column="2" Name="nextButton">
+			Next &gt;
+		</Button>
+		<Border Name="containerBorder" Grid.ColumnSpan="3"></Border>
+
+
+	</Grid>
+</UserControl>
